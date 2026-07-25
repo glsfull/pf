@@ -1,0 +1,16 @@
+{
+  "name": "pf",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "PF — SEO- и аналитическая платформа: отслеживание позиций, Wordstat, аудит, отчёты",
+  "scripts": {
+    "start": "npx --yes http-server . -p 4173 -c-1",
+    "test": "playwright test",
+    "test:install": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "http-server": "^14.1.1"
+  }
+}
