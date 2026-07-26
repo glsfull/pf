@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PF — SEO-платформа (демо)</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">PF <span class="muted">SEO-платформа</span></div>
+  <nav class="tabs" id="nav">
+    <button class="tab" data-view="projects">Мои проекты</button>
+    <button class="tab" data-view="tasks">Очередь задач</button>
+    <button class="tab" data-view="stats">Статистика</button>
+    <button class="tab" data-view="profile">Профиль</button>
+  </nav>
+  <div class="balance" id="balance-chip"></div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="footer">
+  Демо-режим: данные хранятся в localStorage браузера, внешние запросы не выполняются.
+  <a href="https://github.com/glsfull/pf/blob/main/docs/TZ.md">ТЗ</a> ·
+  <a href="https://github.com/glsfull/pf/blob/main/docs/ARCHITECTURE.md">Архитектура</a> ·
+  <a href="https://github.com/glsfull/pf/blob/main/docs/ROADMAP.md">Roadmap</a>
+  <button id="reset-demo" class="link-btn">Сбросить демо-данные</button>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
